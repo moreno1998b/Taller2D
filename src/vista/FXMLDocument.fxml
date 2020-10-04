@@ -8,7 +8,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="834.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorInterfaz.FXMLDocumentController">
     <children>
-        <Button fx:id="button" layoutX="477.0" layoutY="126.0" onAction="#handleButtonAction" text="Click Me!" />
+        <Button fx:id="button" layoutX="481.0" layoutY="179.0" onAction="#handleButtonAction" text="Click Me!" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <MenuBar>
         <menus>
@@ -20,6 +20,6 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button fx:id="btnRombo" layoutX="128.0" layoutY="126.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="btnRombo" layoutX="147.0" layoutY="105.0" mnemonicParsing="false" text="Button" />
     </children>
 </AnchorPane>
