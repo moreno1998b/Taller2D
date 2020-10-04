@@ -11,22 +11,21 @@ import javafx.scene.paint.Color;
  *
  * @author Administrador
  */
-public class Puntos2D {
 
-    Object colorRelleno;
-    Object colorResaltado;
+
+
     
-    public class Punto2D {
+    public class Puntos2D {
 
     public double x;
     public double y;
     public Color colorRelleno;
     public Color colorResaltado;
 
-    public Punto2D() {
+    public Puntos2D() {
     }
 
-    public Punto2D(double x, double y, Color colorRelleno, Color colorResaltado) {
+    public Puntos2D(double x, double y, Color colorRelleno, Color colorResaltado) {
         this.x = x;
         this.y = y;
         this.colorRelleno = colorRelleno;
@@ -84,5 +83,8 @@ public class Puntos2D {
     public void setColorResaltado(Color colorResaltado) {
         this.colorResaltado = colorResaltado;
     }
+     @Override
+    public String toString() {
+        return x + ", " + y;
     }
     }
