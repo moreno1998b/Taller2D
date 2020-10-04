@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Taller2D.jnlp">
+  <information>
+    <title>Taller2D</title>
+    <vendor>57311</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Taller2D.jar" size="2766" download="eager" />
+    <jar href="lib\jdom-2.0.6-contrib.jar" size="167108" download="eager" />
+    <jar href="lib\jdom-2.0.6-junit.jar" size="494414" download="eager" />
+    <jar href="lib\jdom-2.0.6.jar" size="304924" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="vista.Taller2D"  name="Taller2D" />
+  <update check="always"/>
+</jnlp>
