@@ -1,2 +1,6 @@
 
 nbproject/private/private.properties
+*.properties
+dist/Taller2D.html
+dist/Taller2D.jar
+dist/Taller2D.jnlp
