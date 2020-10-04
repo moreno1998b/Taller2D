@@ -12,6 +12,9 @@ import javafx.scene.paint.Color;
  * @author Administrador
  */
 public class Puntos2D {
+
+    Object colorRelleno;
+    Object colorResaltado;
     
     public class Punto2D {
 

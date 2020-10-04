@@ -26,6 +26,16 @@ import org.jdom2.output.XMLOutputter;
 /**
  *
  * @author Administrador
+ * 
+ *  Utilidad: Tiene los métodos para guardar y cargar el archivo xml.
+ *
+ * @author Jairo Vergara Portocarrero 2151714
+ * @author Jorge Moreno
+ * @author Sebastian Bejarano 
+ * 
+ * 
+ * @date 9 Octubre 2020
+ * @version 1.0
  */
 public class GuardadoXml {
      static Document doc;
