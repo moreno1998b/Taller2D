@@ -30,7 +30,7 @@ import org.jdom2.output.XMLOutputter;
  *  Utilidad: Tiene los métodos para guardar y cargar el archivo xml.
  *
  * @author Jairo Vergara Portocarrero 2151714
- * @author Jorge Moreno
+ * @author Jorge Moreno 2175321
  * @author Sebastian Bejarano 
  * 
  * 

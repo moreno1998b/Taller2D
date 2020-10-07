@@ -29,7 +29,7 @@ public class Taller2D extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         Scene scene = new Scene(root);
-        scene.getStylesheets().add("controladorInterfaz/taller2dcss.css");
+        scene.getStylesheets().add("Estilo/taller2dcss.css");
         stage.setScene(scene);
         stage.show();
     }

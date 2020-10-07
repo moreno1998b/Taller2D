@@ -1,0 +1,131 @@
+.root{
+    -fx-background-color: white
+}
+
+#btnRombo{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("rombo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white!important;
+    /*-fx-border-radius: 50%!important;*/
+} 
+#btnRombo:hover{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("rombo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: whitesmoke!important;
+    -fx-background-radius: 50%!important;
+    -fx-border-style: solid;
+    -fx-border-color: #0cbbeb;
+    -fx-border-width: 3px 3px 3px 3px! important;
+    -fx-border-radius: 50%!important;
+    
+    /*-fx-border-radius: 50%!important;*/
+} 
+
+
+
+#btnOctagono{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("octagono.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white!important;
+    /*-fx-border-radius: 50%!important;*/
+} 
+#btnOctagono:hover{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("octagono.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: whitesmoke!important;
+    -fx-border-style: solid;
+    -fx-border-color: #0cbbeb;
+    -fx-border-width: 3px 3px 3px 3px! important;
+    -fx-background-radius: 50%!important;
+    -fx-border-radius: 50%!important;
+    
+    /*-fx-border-radius: 50%!important;*/
+} 
+
+
+#btnHeptagono{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("heptagono.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white!important;
+    /*-fx-border-radius: 50%!important;*/
+} 
+#btnHeptagono:hover{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("heptagono.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: whitesmoke!important;
+    -fx-border-style: solid;
+    -fx-border-color: #0cbbeb;
+    -fx-border-width: 3px 3px 3px 3px! important;
+    -fx-background-radius: 50%!important;
+    -fx-border-radius: 50%!important;
+    
+    /*-fx-border-radius: 50%!important;*/
+} 
+
+#btnHexagono{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("hexagono.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white!important;
+    /*-fx-border-radius: 50%!important;*/
+} 
+#btnHexagono:hover{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("hexagono.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: whitesmoke!important;
+    -fx-border-style: solid;
+    -fx-border-color: #0cbbeb;
+    -fx-border-width: 3px 3px 3px 3px! important;
+    -fx-background-radius: 50%!important;
+    -fx-border-radius: 50%!important;
+    
+    /*-fx-border-radius: 50%!important;*/
+} 
+
+#btnPacman{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("pacman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white!important;
+    /*-fx-border-radius: 50%!important;*/
+} 
+#btnPacman:hover{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("pacman.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: whitesmoke!important;
+    -fx-border-style: solid;
+    -fx-border-color: #0cbbeb;
+    -fx-border-width: 3px 3px 3px 3px! important;
+    -fx-background-radius: 50%!important;
+    -fx-border-radius: 50%!important;
+    
+    /*-fx-border-radius: 50%!important;*/
+} 
+#btnPentagono{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("pentagono.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white!important;
+    /*-fx-border-radius: 50%!important;*/
+} 
+#btnPentagono:hover{
+    /*-fx-background-color: blue;*/
+    -fx-background-image: url("pentagono.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: whitesmoke!important;
+    -fx-border-style: solid;
+    -fx-border-color: #0cbbeb;
+    -fx-border-width: 3px 3px 3px 3px! important;
+    -fx-background-radius: 50%!important;
+    -fx-border-radius: 50%!important;
+    
+    /*-fx-border-radius: 50%!important;*/
+} 

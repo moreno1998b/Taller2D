@@ -6,7 +6,10 @@
             <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/vista/FXMLDocument.fxml</file>
             <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/controladorInterfaz/FXMLDocumentController.java</file>
             <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/vista/Taller2D.java</file>
-            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/nbproject/jfx-impl.xml</file>
+            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/modelo/Figura2D.java</file>
+            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/modelo/GuardadoXml.java</file>
+            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/modelo/Puntos2D.java</file>
+            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/Estilo/taller2dcss.css</file>
         </group>
     </open-files>
 </project-private>
