@@ -24,6 +24,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import modelo.Figura2D;
+import modelo.GuardadoXml;
 import modelo.Puntos2D;
 
 /**
@@ -64,20 +65,24 @@ public class FXMLDocumentController implements Initializable {
     private Integer contadorH = 0;
     private Integer contadorP = 0;
     private Integer contadorR = 0;
+    private Integer contadorPentagono = 0;
+    private Integer contadorO = 0;
+    private Integer contadorHeptagono = 0;
     HashMap<String, LinkedList<Puntos2D>> mapFiguras;
     LinkedList<Puntos2D> listapuntosFigura;
     double coordx;
     double coordy;
     double[] arrayx;
     double[] arrayy;
+    private String comodin;
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
 
     }
 
-    @FXML
-    private void crearRombo(MouseEvent event) {
+//    @FXML
+    private void crearRombo() {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
 
@@ -124,8 +129,7 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
-    @FXML
-    private void crearOctagono(MouseEvent event) {
+    private void crearOctagono() {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
 
@@ -171,8 +175,109 @@ public class FXMLDocumentController implements Initializable {
         lienzo.setFill(c2);
         for (int i = 0; i < arrayx.length; i++) {
             listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
-            mapFiguras.put("Octagono" + contadorP, listapuntosFigura);
-            contadorR++;
+            mapFiguras.put("Octagono" + contadorO, listapuntosFigura);
+            contadorO++;
+
+        }
+
+    }
+
+    @FXML
+    private void llenarvarRombo(ActionEvent event) {
+        comodin = "Rombo";
+    }
+
+    @FXML
+    private void llenarvarOctagono(ActionEvent event) {
+        comodin = "Octagono";
+    }
+
+    @FXML
+    private void llenarvarPentagono(ActionEvent event) {
+        comodin = "Pentagono";
+    }
+
+    @FXML
+    private void llenarvarHexagono(ActionEvent event) {
+        comodin = "Hexagono";
+    }
+
+    @FXML
+    private void llenarvarHeptagono(ActionEvent event) {
+        comodin = "Heptagono";
+    }
+
+    @FXML
+    private void llenarvarPacman(ActionEvent event) {
+        comodin = "Pacman";
+    }
+
+//    @FXML
+    private void dibujarFigura() {
+        switch (comodin) {
+            case "Rombo":
+                crearRombo();
+                break;
+            case "Octagono":
+                crearOctagono();
+                break;
+            case "Pentagono":
+                crearPentagono();
+                break;
+            case "Hexagono":
+                crearHexagono();
+                break;
+            case "Heptagono":
+                crearHeptagono();
+
+                break;
+            case "Pacman":
+//                crearPacman();
+                break;
+
+            // code block
+        }
+    }
+
+    private void crearPentagono() {
+        LinkedList<Puntos2D> lista = new LinkedList<>();
+        LinkedList<Figura2D> listaf = new LinkedList<>();
+
+        arrayx = new double[5];
+        arrayy = new double[5];
+
+        lienzo.setLineWidth(3);
+
+        int radio = 50;
+
+        arrayx[0] = (coordx + radio);
+        arrayy[0] = (coordy);
+
+        arrayx[1] = coordx + radio * Math.cos(2 * Math.PI / 5);
+        arrayy[1] = coordy + radio * Math.sin(2 * Math.PI / 5);
+
+        arrayx[2] = coordx + radio * Math.cos(2 * 2 * Math.PI / 5);
+        arrayy[2] = coordy + radio * Math.sin(2 * 2 * Math.PI / 5);
+
+        arrayx[3] = coordx + radio * Math.cos(3 * 2 * Math.PI / 5);
+        arrayy[3] = coordy + radio * Math.sin(3 * 2 * Math.PI / 5);
+
+        arrayx[4] = coordx + radio * Math.cos(4 * 2 * Math.PI / 5);
+        arrayy[4] = coordy + radio * Math.sin(4 * 2 * Math.PI / 5);
+
+        lienzo.setStroke(c);
+        lienzo.strokePolygon(arrayx, arrayy, 5);
+        lienzo.setFill(c);
+        lienzo.setFill(c);
+        lienzo.setStroke(c2);
+        lienzo.setLineWidth(1);
+//
+        lienzo.fillPolygon(arrayx, arrayx, 5);
+        lienzo.setFill(c2);
+        for (int i = 0; i < arrayx.length; i++) {
+            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
+            mapFiguras.put("Pentagono" + contadorPentagono, listapuntosFigura);
+            contadorPentagono++;
 
         }
 
@@ -203,8 +308,7 @@ public class FXMLDocumentController implements Initializable {
         System.out.println(c2);
     }
 
-    @FXML
-    private void crearHexagono(MouseEvent event) {
+    private void crearHexagono() {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
 
@@ -250,10 +354,61 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
+    private void crearHeptagono() {
+        LinkedList<Puntos2D> lista = new LinkedList<>();
+        LinkedList<Figura2D> listaf = new LinkedList<>();
+
+        arrayx = new double[7];
+        arrayy = new double[7];
+
+        lienzo.setLineWidth(3);
+
+        int radio = 50;
+
+        arrayx[0] = (coordx + radio);
+        arrayy[0] = (coordy);
+
+        arrayx[1] = coordx + radio * Math.cos(2 * Math.PI / 7);
+        arrayy[1] = coordy + radio * Math.sin(2 * Math.PI / 7);
+
+        arrayx[2] = coordx + radio * Math.cos(2 * 2 * Math.PI / 7);
+        arrayy[2] = coordy + radio * Math.sin(2 * 2 * Math.PI / 7);
+
+        arrayx[3] = coordx + radio * Math.cos(3 * 2 * Math.PI / 7);
+        arrayy[3] = coordy + radio * Math.sin(3 * 2 * Math.PI / 7);
+
+        arrayx[4] = coordx + radio * Math.cos(4 * 2 * Math.PI / 7);
+        arrayy[4] = coordy + radio * Math.sin(4 * 2 * Math.PI / 7);
+
+        arrayx[5] = coordx + radio * Math.cos(5 * 2 * Math.PI / 7);
+        arrayy[5] = coordy + radio * Math.sin(5 * 2 * Math.PI / 7);
+
+        arrayx[6] = coordx + radio * Math.cos(6 * 2 * Math.PI / 7);
+        arrayy[6] = coordy + radio * Math.sin(6 * 2 * Math.PI / 7);
+
+        lienzo.setStroke(c);
+        lienzo.strokePolygon(arrayx, arrayy, 7);
+        lienzo.setFill(c);
+        lienzo.setFill(c2);
+        lienzo.setStroke(c2);
+        lienzo.setLineWidth(1);
+//
+        lienzo.fillPolygon(arrayx, arrayx, 7);
+        lienzo.setFill(c2);
+        for (int i = 0; i < arrayx.length; i++) {
+            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
+            mapFiguras.put("Heptagono" + contadorHeptagono, listapuntosFigura);
+            contadorHeptagono++;
+
+        }
+
+    }
+
     @FXML
     private void obtenerCoordenadas(MouseEvent event) {
         coordx = event.getX();
         coordy = event.getY();
+        dibujarFigura();
         System.out.println(coordx + "-" + coordy);
     }
 
@@ -271,6 +426,14 @@ public class FXMLDocumentController implements Initializable {
 
     public void setCoordy(double coordy) {
         this.coordy = coordy;
+    }
+
+    public String getComodin() {
+        return comodin;
+    }
+
+    public void setComodin(String comodin) {
+        this.comodin = comodin;
     }
 
 }
