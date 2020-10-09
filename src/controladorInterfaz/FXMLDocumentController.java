@@ -3,6 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/**
+ *
+ * @author Administrador
+ *
+ * 
+ *
+ * @author Jairo Vergara Portocarrero 2151714
+ * @author Jorge Moreno 2175321
+ * @author Sebastian Bejarano 2190853
+ *
+ *
+ * @date 9 Octubre 2020
+ * @version 1.0
+ */
 package controladorInterfaz;
 
 import java.awt.image.RenderedImage;

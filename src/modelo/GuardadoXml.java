@@ -28,11 +28,11 @@ import org.jdom2.output.XMLOutputter;
  *
  * @author Administrador
  *
- * Utilidad: Tiene los métodos para guardar y cargar el archivo xml.
+ * GuardadoXml: Tiene los métodos para guardar y cargar el archivo xml.
  *
  * @author Jairo Vergara Portocarrero 2151714
  * @author Jorge Moreno 2175321
- * @author Sebastian Bejarano
+ * @author Sebastian Bejarano 2190853
  *
  *
  * @date 9 Octubre 2020
@@ -48,7 +48,7 @@ public class GuardadoXml {
             /**
              * crearArchivoXML.
              *
-             * Método para crear un archivo XML con los puntos x e y que se han
+             * Método para crear un archivo XML con los puntos arrayx e arrayy que se han
              * creado en el lienzo.
              */
 
