@@ -5,10 +5,15 @@
  */
 package controladorInterfaz;
 
+import java.awt.image.RenderedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -18,12 +23,16 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
+import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import javafx.scene.shape.ArcType;
+import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 import modelo.Figura2D;
 import modelo.GuardadoXml;
@@ -422,6 +431,19 @@ public class FXMLDocumentController implements Initializable {
         } else {
             JOptionPane.showMessageDialog(null, "Archivo No Creado");
         }
+    }
+    @FXML
+    private void guardarPNG(ActionEvent event) throws IOException{
+        
+        WritableImage image = canvas.snapshot(null, null);
+
+        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", new File("C://Users/Sebastián/Desktop/image.png"));
+    }
+    @FXML
+    private void guardarJPG(ActionEvent event) throws IOException{
+        WritableImage image = canvas.snapshot(null, null);
+
+        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "jpg", new File("C://Users/Sebastián/Desktop/image.jpg"));
     }
 
     private void crearHexagono() {
