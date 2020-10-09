@@ -23,6 +23,7 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
+import javafx.scene.shape.ArcType;
 import javax.swing.JOptionPane;
 import modelo.Figura2D;
 import modelo.GuardadoXml;
@@ -373,16 +374,36 @@ public class FXMLDocumentController implements Initializable {
         lienzo.setStroke(c);
         lienzo.setLineWidth(3);
 
-        lienzo.fillOval(coordx, coordy, radio * 2, radio * 2);
-        lienzo.strokeOval(coordx, coordy, radio * 2, radio * 2);
+//        lienzo.fillOval(coordx, coordy, radio * 2, radio * 2);
+        lienzo.fillArc(coordx, coordy, radio * 2, radio * 2, 45, 290, ArcType.ROUND);
+        lienzo.strokeArc(coordx, coordy, radio * 2, radio * 2, 45, 290, ArcType.ROUND);
+//        lienzo.strokeOval(coordx, coordy, radio * 2, radio * 2);
 
         int radio2 = 5;
         lienzo.setFill(c2);
         lienzo.setStroke(c2);
         lienzo.setLineWidth(3);
 
-        lienzo.fillOval(coordx+50, coordy+20, radio2 * 2, radio2 * 2);
-        lienzo.strokeOval(coordx+50, coordy+20, radio2 * 2, radio2 * 2);
+        lienzo.fillOval(coordx + 50, coordy + 20, radio2 * 2, radio2 * 2);
+
+        lienzo.strokeOval(coordx + 50, coordy + 20, radio2 * 2, radio2 * 2);
+
+//        
+//        arrayx[0] = (coordx + radio2);
+//        arrayy[0] = (coordy);
+//
+//        arrayx[1] = coordx + radio2 * Math.cos(2 * Math.PI / 3);
+//        arrayy[1] = coordy + radio2 * Math.sin(2 * Math.PI / 3);
+//
+//        arrayx[2] = coordx + radio2 * Math.cos(2 * 2 * Math.PI / 3);
+//        arrayy[2] = coordy + radio2 * Math.sin(2 * 2 * Math.PI / 3);
+//
+//
+//
+//        lienzo.setFill(c);
+//        lienzo.setStroke(c);
+//        lienzo.strokePolygon(arrayx, arrayy, 3);
+//        lienzo.fillPolygon(arrayx, arrayy, 3);
 //        for (int i = 0; i < arrayx.length; i++) {
         Puntos2D punto = new Puntos2D(coordx, coordy, c, c2);
         listapuntosFigura.add(punto);
