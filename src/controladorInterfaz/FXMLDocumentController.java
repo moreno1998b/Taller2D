@@ -333,12 +333,33 @@ public class FXMLDocumentController implements Initializable {
         arrayx[4] = coordx + radio * Math.cos(4 * 2 * Math.PI / 5);
         arrayy[4] = coordy + radio * Math.sin(4 * 2 * Math.PI / 5);
 
-        lienzo.setFill(colorRelleno.getValue());
-        lienzo.setStroke(colorLineado.getValue());
+        lienzo.setFill(c2);
+        lienzo.setStroke(c2);
         lienzo.strokePolygon(arrayx, arrayy, 5);
         lienzo.fillPolygon(arrayx, arrayx, 5);
 
-        
+        int radio2 = 100;
+        lienzo.setLineWidth(20);
+        arrayx[0] = (coordx + radio2);
+        arrayy[0] = (coordy);
+
+        arrayx[1] = coordx + radio2 * Math.cos(2 * Math.PI / 5);
+        arrayy[1] = coordy + radio2 * Math.sin(2 * Math.PI / 5);
+
+        arrayx[2] = coordx + radio2 * Math.cos(2 * 2 * Math.PI / 5);
+        arrayy[2] = coordy + radio2 * Math.sin(2 * 2 * Math.PI / 5);
+
+        arrayx[3] = coordx + radio2 * Math.cos(3 * 2 * Math.PI / 5);
+        arrayy[3] = coordy + radio2 * Math.sin(3 * 2 * Math.PI / 5);
+
+        arrayx[4] = coordx + radio2 * Math.cos(4 * 2 * Math.PI / 5);
+        arrayy[4] = coordy + radio2 * Math.sin(4 * 2 * Math.PI / 5);
+
+        lienzo.setFill(c);
+        lienzo.setStroke(c);
+        lienzo.strokePolygon(arrayx, arrayy, 5);
+        lienzo.fillPolygon(arrayx, arrayx, 5);
+
         for (int i = 0; i < arrayx.length; i++) {
             listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
 
