@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>266</y>
+      <w>182</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Figura2D
+--
++fx: double[]
++fy: double[]
+--
++Figura2D(): ctor
++Figura2D(double[] fx, double[] fy): ctor
++getFy(): double[]
++setFy(double[] fy): void
++getFx(): double[]
++setFx(double[] fx): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>861</x>
+      <y>560</y>
+      <w>399</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>GuardadoXml
+--
+~doc: Document
+--
++crearArchivoXML(HashMap&lt;String, LinkedList&lt;Puntos2D&gt;&gt; mp, Stage stage): boolean
++leerArchivoXML(File file): LinkedList
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>868</x>
+      <y>294</y>
+      <w>350</w>
+      <h>217</h>
+    </coordinates>
+    <panel_attributes>Puntos2D
+--
++x: double
++y: double
++colorRelleno: Color
++colorResaltado: Color
+--
++Puntos2D(): ctor
++Puntos2D(double x, double y, Color colorRelleno, Color colorResaltado): ctor
++getY(): double
++setY(double y): void
++getX(): double
++setX(double x): void
++getColorRelleno(): Color
++setColorRelleno(Color colorRelleno): void
++getColorResaltado(): Color
++setColorResaltado(Color colorResaltado): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>147</y>
+      <w>119</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Taller2D
+--
+--
++start(Stage stage): void
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>511</x>
+      <y>392</y>
+      <w>210</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;250.0;280.0;250.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>791</x>
+      <y>49</y>
+      <w>210</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+Initializable
+--
++initialize(url: URL, rb: ResourceBundle): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>679</x>
+      <y>231</y>
+      <w>84</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>FXMLDocument</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>511</x>
+      <y>238</y>
+      <w>182</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;190.0;80.0;190.0;80.0;10.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>168</y>
+      <w>63</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;70.0;20.0;70.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>511</x>
+      <y>161</y>
+      <w>63</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>70.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>847</x>
+      <y>203</y>
+      <w>84</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>/AbstractClass/
+Application
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>504</y>
+      <w>21</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>161</y>
+      <w>231</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>310.0;60.0;310.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>805</x>
+      <y>315</y>
+      <w>77</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>511</x>
+      <y>84</y>
+      <w>294</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;400.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>259</x>
+      <y>42</y>
+      <w>259</w>
+      <h>651</h>
+    </coordinates>
+    <panel_attributes>controladorInterfaz::FXMLDocumentController
+--
+-canvas: Canvas
+-btnRombo: Button
+-btnOctagono: Button
+-btnPentagono: Button
+-btnHexagono: Button
+-btnHeptagono: Button
+-btnPacman: Button
+-colorLineado: ColorPicker
+-colorRelleno: ColorPicker
+-labelLineado: Label
+-labelRelleno: Label
+-lienzo: GraphicsContext
+-c: Color
+-c2: Color
+-contadorH = 0: Integer
+-contadorP = 0: Integer
+-contadorR = 0: Integer
+-contadorPentagono = 0: Integer
+-contadorO = 0: Integer
+-contadorHeptagono = 0: Integer
+-contadorPacman = 0: Integer
+~mapFiguras: HashMap&lt;String, LinkedList&lt;Puntos2D&gt;&gt;
+~listapuntosFigura: LinkedList&lt;Puntos2D&gt;
+~coordx: double
+~coordy: double
+~arrayx: double[]
+~arrayy: double[]
+-comodin: String
+--
+-handleButtonAction(ActionEvent event): void
+-crearRombo(): void
+-crearOctagono(): void
+-llenarvarRombo(ActionEvent event): void
+-llenarvarOctagono(ActionEvent event): void
+-llenarvarPentagono(ActionEvent event): void
+-llenarvarHexagono(ActionEvent event): void
+-llenarvarHeptagono(ActionEvent event): void
+-llenarvarPacman(ActionEvent event): void
+-dibujarFigura(): void
+-crearPentagono(): void
++initialize(URL url, ResourceBundle rb): void
+-changeColorLineado(ActionEvent event): void
+-changeColorRelleno(ActionEvent event): void
++crearPacman(): void
+-guardarArchivo(ActionEvent event): void
+-guardarPNG(ActionEvent event): void
+-guardarJPG(ActionEvent event): void
+-crearHexagono(): void
+-crearHeptagono(): void
+-obtenerCoordenadas(MouseEvent event): void
++getCoordx(): double
++setCoordx(double coordx): void
++getCoordy(): double
++setCoordy(double coordy): void
++getComodin(): String
++setComodin(String comodin): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

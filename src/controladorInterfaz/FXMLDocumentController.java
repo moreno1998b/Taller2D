@@ -436,14 +436,15 @@ public class FXMLDocumentController implements Initializable {
     private void guardarPNG(ActionEvent event) throws IOException{
         
         WritableImage image = canvas.snapshot(null, null);
-
-        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", new File("C://Users/Sebastián/Desktop/image.png"));
+        String desktopPath = System.getProperty("user.home").replace("\\", "/") + "/Desktop/image.png";
+        
+        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", new File(desktopPath));
     }
     @FXML
     private void guardarJPG(ActionEvent event) throws IOException{
         WritableImage image = canvas.snapshot(null, null);
-
-        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "jpg", new File("C://Users/Sebastián/Desktop/image.jpg"));
+        String desktopPath = System.getProperty("user.home").replace("\\", "/") + "/Desktop/image.jpg";
+        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", new File(desktopPath));
     }
 
     private void crearHexagono() {
