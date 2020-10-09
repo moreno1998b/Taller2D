@@ -137,10 +137,10 @@ public class FXMLDocumentController implements Initializable {
         lienzo.fillPolygon(arrayx, arrayx, 4);
         for (int i = 0; i < arrayx.length; i++) {
             listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
-            mapFiguras.put("Rombo" + contadorR, listapuntosFigura);
-            contadorR++;
 
         }
+        mapFiguras.put("Rombo" + contadorR, listapuntosFigura);
+        contadorR++;
 
     }
 
@@ -217,10 +217,10 @@ public class FXMLDocumentController implements Initializable {
         lienzo.setFill(c);
         for (int i = 0; i < arrayx.length; i++) {
             listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
-            mapFiguras.put("Octagono" + contadorO, listapuntosFigura);
-            contadorO++;
 
         }
+        mapFiguras.put("Octagono" + contadorO, listapuntosFigura);
+        contadorO++;
 
     }
 
@@ -339,10 +339,10 @@ public class FXMLDocumentController implements Initializable {
 
         for (int i = 0; i < arrayx.length; i++) {
             listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
-            mapFiguras.put("Pentagono" + contadorPentagono, listapuntosFigura);
-            contadorPentagono++;
 
         }
+        mapFiguras.put("Pentagono" + contadorPentagono, listapuntosFigura);
+        contadorPentagono++;
 
     }
 
@@ -413,6 +413,17 @@ public class FXMLDocumentController implements Initializable {
         contadorPacman++;
     }
 
+    @FXML
+    private void guardarArchivo(ActionEvent event) {
+
+        boolean t = GuardadoXml.guardarArchivoXML(mapFiguras);
+        if (t) {
+            JOptionPane.showMessageDialog(null, "Archivo Creado con exito");
+        } else {
+            JOptionPane.showMessageDialog(null, "Archivo No Creado");
+        }
+    }
+
     private void crearHexagono() {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
@@ -477,11 +488,10 @@ public class FXMLDocumentController implements Initializable {
         lienzo.strokePolygon(arrayx, arrayy, 6);
         for (int i = 0; i < arrayx.length; i++) {
             listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
-            mapFiguras.put("Hexagono" + contadorH, listapuntosFigura);
-            contadorH++;
 
         }
-
+        mapFiguras.put("Hexagono" + contadorH, listapuntosFigura);
+        contadorH++;
     }
 
     private void crearHeptagono() {
@@ -548,11 +558,10 @@ public class FXMLDocumentController implements Initializable {
         lienzo.strokePolygon(arrayx, arrayy, 7);
         for (int i = 0; i < arrayx.length; i++) {
             listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
-            mapFiguras.put("Heptagono" + contadorHeptagono, listapuntosFigura);
-            contadorHeptagono++;
 
         }
-
+        contadorHeptagono++;
+        mapFiguras.put("Heptagono" + contadorHeptagono, listapuntosFigura);
     }
 
     @FXML

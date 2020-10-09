@@ -19,7 +19,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Opciones">
             <items>
-              <MenuItem mnemonicParsing="false" text="Guardar Archivo" />
+              <MenuItem mnemonicParsing="false" onAction="#guardarArchivo" text="Guardar Archivo" />
                   <MenuItem mnemonicParsing="false" text="Leer Archivo" />
             </items>
           </Menu>
