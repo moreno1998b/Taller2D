@@ -7,7 +7,7 @@
  *
  * @author Administrador
  *
- * 
+ *
  *
  * @author Jairo Vergara Portocarrero 2151714
  * @author Jorge Moreno 2175321
@@ -24,6 +24,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
@@ -111,7 +112,7 @@ public class FXMLDocumentController implements Initializable {
     private void crearRombo() {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
-
+        listapuntosFigura = new LinkedList<>();
         arrayx = new double[4];
         arrayy = new double[4];
 
@@ -148,7 +149,7 @@ public class FXMLDocumentController implements Initializable {
     private void crearOctagono() {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
-
+        listapuntosFigura = new LinkedList<>();
         arrayx = new double[8];
         arrayy = new double[8];
 
@@ -257,7 +258,7 @@ public class FXMLDocumentController implements Initializable {
     private void crearPentagono() {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
-
+        listapuntosFigura = new LinkedList<>();
         arrayx = new double[5];
         arrayy = new double[5];
 
@@ -279,6 +280,7 @@ public class FXMLDocumentController implements Initializable {
         arrayy[4] = coordy + radio * Math.sin(4 * 2 * Math.PI / 5);
 
         lienzo.setStroke(c);
+        lienzo.setLineWidth(100);
         lienzo.strokePolygon(arrayx, arrayy, 5);
         lienzo.fillPolygon(arrayx, arrayx, 5);
 
@@ -326,7 +328,6 @@ public class FXMLDocumentController implements Initializable {
         lienzo.setStroke(c);
         lienzo.setLineWidth(3);
 
-
         lienzo.strokeOval(coordx + 50, coordy + 20, radio2 * 2, radio2 * 2);
 
 //        
@@ -364,16 +365,18 @@ public class FXMLDocumentController implements Initializable {
             JOptionPane.showMessageDialog(null, "Archivo No Creado");
         }
     }
+
     @FXML
-    private void guardarPNG(ActionEvent event) throws IOException{
-        
+    private void guardarPNG(ActionEvent event) throws IOException {
+
         WritableImage image = canvas.snapshot(null, null);
         String desktopPath = System.getProperty("user.home").replace("\\", "/") + "/Desktop/image.png";
-        
+
         ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", new File(desktopPath));
     }
+
     @FXML
-    private void guardarJPG(ActionEvent event) throws IOException{
+    private void guardarJPG(ActionEvent event) throws IOException {
         WritableImage image = canvas.snapshot(null, null);
         String desktopPath = System.getProperty("user.home").replace("\\", "/") + "/Desktop/image.jpg";
         ImageIO.write(SwingFXUtils.fromFXImage(image, null), "png", new File(desktopPath));
@@ -383,6 +386,7 @@ public class FXMLDocumentController implements Initializable {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
 //        lienzo = canvas.getGraphicsContext2D();
+        listapuntosFigura = new LinkedList<>();
         arrayx = new double[6];
         arrayy = new double[6];
 
@@ -418,6 +422,7 @@ public class FXMLDocumentController implements Initializable {
     }
 
     private void crearHeptagono() {
+        listapuntosFigura = new LinkedList<>();
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
 
