@@ -138,7 +138,7 @@ public class FXMLDocumentController implements Initializable {
 //
         lienzo.fillPolygon(arrayx, arrayx, 4);
         for (int i = 0; i < arrayx.length; i++) {
-            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
+            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c));
 
         }
         mapFiguras.put("Rombo" + contadorR, listapuntosFigura);
@@ -185,7 +185,7 @@ public class FXMLDocumentController implements Initializable {
 //
         lienzo.setFill(c);
         for (int i = 0; i < arrayx.length; i++) {
-            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
+            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c));
 
         }
         mapFiguras.put("Octagono" + contadorO, listapuntosFigura);
@@ -285,7 +285,7 @@ public class FXMLDocumentController implements Initializable {
         lienzo.fillPolygon(arrayx, arrayx, 5);
 
         for (int i = 0; i < arrayx.length; i++) {
-            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
+            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c));
 
         }
         mapFiguras.put("Pentagono" + contadorPentagono, listapuntosFigura);
@@ -414,7 +414,7 @@ public class FXMLDocumentController implements Initializable {
         lienzo.fillPolygon(arrayx, arrayx, 6);
         lienzo.strokePolygon(arrayx, arrayy, 6);
         for (int i = 0; i < arrayx.length; i++) {
-            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
+            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c));
 
         }
         mapFiguras.put("Hexagono" + contadorH, listapuntosFigura);
@@ -457,7 +457,7 @@ public class FXMLDocumentController implements Initializable {
         lienzo.strokePolygon(arrayx, arrayy, 7);
 
         for (int i = 0; i < arrayx.length; i++) {
-            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c2));
+            listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c));
 
         }
         contadorHeptagono++;
