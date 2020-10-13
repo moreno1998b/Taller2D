@@ -43,11 +43,5 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="labelRelleno" layoutX="64.0" layoutY="727.0" prefHeight="30.0" prefWidth="122.0" text="Relleno" textFill="#0dcbff">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <ColorPicker fx:id="colorRelleno" layoutX="64.0" layoutY="767.0" onAction="#changeColorRelleno" prefHeight="31.0" prefWidth="276.0" />
     </children>
 </AnchorPane>
