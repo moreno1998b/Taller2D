@@ -296,7 +296,7 @@ public class FXMLDocumentController implements Initializable {
             c = c3;
         }
         lienzo.setStroke(c);
-        lienzo.setLineWidth(100);
+        lienzo.setLineWidth(3);
         lienzo.strokePolygon(arrayx, arrayy, 5);
         lienzo.fillPolygon(arrayx, arrayx, 5);
 
