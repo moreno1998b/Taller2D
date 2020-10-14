@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ColorPicker?>
@@ -11,7 +16,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="834.0" prefWidth="1326.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorInterfaz.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="834.0" prefWidth="1326.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorInterfaz.FXMLDocumentController">
     <children>
         <Button fx:id="btnOctagono" layoutX="212.0" layoutY="105.0" onAction="#llenarvarOctagono" prefHeight="134.0" prefWidth="128.0" />
         <Label fx:id="label" layoutX="129.0" layoutY="32.0" minHeight="16" minWidth="69" prefHeight="62.0" prefWidth="174.0" text="Figuras " textFill="#0cbbeb">
@@ -23,7 +28,7 @@
           <Menu mnemonicParsing="false" text="Opciones">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#guardarArchivo" text="Guardar Archivo" />
-                  <MenuItem mnemonicParsing="false" text="Leer Archivo" />
+                  <MenuItem mnemonicParsing="false" onAction="#leerArchivo" text="Leer Archivo " />
                   <MenuItem mnemonicParsing="false" onAction="#guardarPNG" text="Guardar PNG" />
                   <MenuItem mnemonicParsing="false" onAction="#guardarJPG" text="Guardar JPG" />
             </items>

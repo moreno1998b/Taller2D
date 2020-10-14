@@ -3,13 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/vista/FXMLDocument.fxml</file>
-            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/controladorInterfaz/FXMLDocumentController.java</file>
-            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/vista/Taller2D.java</file>
-            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/modelo/Figura2D.java</file>
-            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/modelo/GuardadoXml.java</file>
-            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/modelo/Puntos2D.java</file>
-            <file>file:/C:/Users/57311/Documents/NetBeansProjects/Taller2D/src/Estilo/taller2dcss.css</file>
+            <file>file:/C:/Users/Administrador/Documents/GitHub/Taller2D/src/modelo/GuardadoXml.java</file>
+            <file>file:/C:/Users/Administrador/Documents/GitHub/Taller2D/src/controladorInterfaz/FXMLDocumentController.java</file>
         </group>
     </open-files>
 </project-private>

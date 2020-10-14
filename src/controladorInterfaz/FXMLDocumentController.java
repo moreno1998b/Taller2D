@@ -26,7 +26,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.ResourceBundle;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
@@ -110,6 +112,25 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void leerArchivo (ActionEvent event) {
 
+        HashMap<String, LinkedList<Puntos2D>> mapF = GuardadoXml.leerArchivo();
+
+        Iterator<Map.Entry<String, LinkedList<Puntos2D>>> entries = mapF.entrySet().iterator();
+
+        while (entries.hasNext()) {
+            Map.Entry<String, LinkedList<Puntos2D>> elemento = entries.next();
+            double[] coordenadasx = new double[elemento.getValue().size()];
+            double[] coordenadasy = new double[elemento.getValue().size()];
+
+            for (int i = 0; i < elemento.getValue().size(); i++) {
+                Puntos2D punto = elemento.getValue().get(i);
+                coordenadasx[i] = punto.getX();
+                coordenadasy[i] = punto.getY();
+            }
+            lienzo.setLineWidth(3);
+            lienzo.setStroke(Color.DARKMAGENTA);
+            lienzo.strokePolygon(coordenadasx, coordenadasy, elemento.getValue().size());
+
+    }
     }
 
 //    @FXML
