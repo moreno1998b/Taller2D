@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <figurasgeometricas>
-  <figurageometrica nombre="Octagono0">
-    <Coordenadas1 x="717.0" y="177.0" colorRelleno="0xff8080ff" colorResaltado="0xff8080ff" />
-    <Coordenadas2 x="702.3553390593274" y="212.35533905932738" colorRelleno="0xff8080ff" colorResaltado="0xff8080ff" />
-    <Coordenadas3 x="667.0" y="227.0" colorRelleno="0xff8080ff" colorResaltado="0xff8080ff" />
-    <Coordenadas4 x="631.6446609406727" y="212.35533905932738" colorRelleno="0xff8080ff" colorResaltado="0xff8080ff" />
-    <Coordenadas5 x="617.0" y="177.0" colorRelleno="0xff8080ff" colorResaltado="0xff8080ff" />
-    <Coordenadas6 x="631.6446609406726" y="141.64466094067262" colorRelleno="0xff8080ff" colorResaltado="0xff8080ff" />
-    <Coordenadas7 x="667.0" y="127.0" colorRelleno="0xff8080ff" colorResaltado="0xff8080ff" />
-    <Coordenadas8 x="702.3553390593273" y="141.64466094067262" colorRelleno="0xff8080ff" colorResaltado="0xff8080ff" />
-  </figurageometrica>
-  <figurageometrica nombre="Rombo0">
-    <Coordenadas1 x="392.0" y="350.0" colorRelleno="0xffff66ff" colorResaltado="0xffff66ff" />
-    <Coordenadas2 x="342.0" y="400.0" colorRelleno="0xffff66ff" colorResaltado="0xffff66ff" />
-    <Coordenadas3 x="292.0" y="350.0" colorRelleno="0xffff66ff" colorResaltado="0xffff66ff" />
-    <Coordenadas4 x="342.0" y="300.0" colorRelleno="0xffff66ff" colorResaltado="0xffff66ff" />
+  <figurageometrica nombre="Hexagono0">
+    <Coordenadas1 x="382.0" y="303.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
+    <Coordenadas2 x="357.0" y="346.30127018922195" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
+    <Coordenadas3 x="307.0" y="346.30127018922195" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
+    <Coordenadas4 x="282.0" y="303.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
+    <Coordenadas5 x="307.0" y="259.6987298107781" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
+    <Coordenadas6 x="357.0" y="259.69872981077805" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
   </figurageometrica>
 </figurasgeometricas>

@@ -130,7 +130,11 @@ public class FXMLDocumentController implements Initializable {
 
         arrayx[3] = coordx + radio * Math.cos(3 * 2 * Math.PI / 4);
         arrayy[3] = coordy + radio * Math.sin(3 * 2 * Math.PI / 4);
-
+        if (c == null) {
+//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
+            Color c3 = Color.CORAL;
+            c = c3;
+        }
         lienzo.setStroke(c);
 
         lienzo.fillPolygon(arrayx, arrayx, 4);
@@ -178,7 +182,11 @@ public class FXMLDocumentController implements Initializable {
 
         arrayx[7] = coordx + radio * Math.cos(7 * 2 * Math.PI / 8);
         arrayy[7] = coordy + radio * Math.sin(7 * 2 * Math.PI / 8);
-
+        if (c == null) {
+//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
+            Color c3 = Color.CORAL;
+            c = c3;
+        }
         lienzo.setStroke(c);
         lienzo.fillPolygon(arrayx, arrayx, 8);
         lienzo.strokePolygon(arrayx, arrayy, 8);
@@ -278,7 +286,11 @@ public class FXMLDocumentController implements Initializable {
 
         arrayx[4] = coordx + radio * Math.cos(4 * 2 * Math.PI / 5);
         arrayy[4] = coordy + radio * Math.sin(4 * 2 * Math.PI / 5);
-
+        if (c == null) {
+//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
+            Color c3 = Color.CORAL;
+            c = c3;
+        }
         lienzo.setStroke(c);
         lienzo.setLineWidth(100);
         lienzo.strokePolygon(arrayx, arrayy, 5);
@@ -325,6 +337,11 @@ public class FXMLDocumentController implements Initializable {
 //        lienzo.strokeOval(coordx, coordy, radio * 2, radio * 2);
 
         int radio2 = 5;
+        if (c == null) {
+//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
+            Color c3 = Color.CORAL;
+            c = c3;
+        }
         lienzo.setStroke(c);
         lienzo.setLineWidth(3);
 
@@ -410,9 +427,15 @@ public class FXMLDocumentController implements Initializable {
 
         arrayx[5] = coordx + radio2 * Math.cos(5 * 2 * Math.PI / 6);
         arrayy[5] = coordy + radio2 * Math.sin(5 * 2 * Math.PI / 6);
+        if (c == null) {
+//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
+            Color c3 = Color.CORAL;
+            c = c3;
+        }
         lienzo.setStroke(c);
         lienzo.fillPolygon(arrayx, arrayx, 6);
         lienzo.strokePolygon(arrayx, arrayy, 6);
+
         for (int i = 0; i < arrayx.length; i++) {
             listapuntosFigura.add(new Puntos2D(arrayx[i], arrayy[i], c, c));
 
@@ -451,7 +474,11 @@ public class FXMLDocumentController implements Initializable {
 
         arrayx[6] = coordx + radio * Math.cos(6 * 2 * Math.PI / 7);
         arrayy[6] = coordy + radio * Math.sin(6 * 2 * Math.PI / 7);
-
+        if (c == null) {
+//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
+            Color c3 = Color.CORAL;
+            c = c3;
+        }
         lienzo.setStroke(c);
         lienzo.fillPolygon(arrayx, arrayx, 7);
         lienzo.strokePolygon(arrayx, arrayy, 7);
