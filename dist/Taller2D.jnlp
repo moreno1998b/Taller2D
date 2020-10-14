@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Taller2D.jar" size="39462" download="eager" />
+    <jar href="Taller2D.jar" size="39465" download="eager" />
     <jar href="lib\jdom-2.0.6-contrib.jar" size="167108" download="eager" />
     <jar href="lib\jdom-2.0.6-junit.jar" size="494414" download="eager" />
     <jar href="lib\jdom-2.0.6.jar" size="304924" download="eager" />
