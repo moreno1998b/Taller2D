@@ -26,7 +26,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.ResourceBundle;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
@@ -107,8 +109,9 @@ public class FXMLDocumentController implements Initializable {
     private void handleButtonAction(ActionEvent event) {
 
     }
+
     @FXML
-    private void leerArchivo (ActionEvent event) {
+    private void leerArchivo(ActionEvent event) {
 
     }
 
@@ -291,7 +294,6 @@ public class FXMLDocumentController implements Initializable {
         arrayx[4] = coordx + radio * Math.cos(4 * 2 * Math.PI / 5);
         arrayy[4] = coordy + radio * Math.sin(4 * 2 * Math.PI / 5);
         if (c == null) {
-//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
             Color c3 = Color.CORAL;
             c = c3;
         }
@@ -311,7 +313,6 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-//       btnRombo.getStylesheets().add("button");
         listapuntosFigura = new LinkedList<>();
         lienzo = canvas.getGraphicsContext2D();
         mapFiguras = new HashMap<>();
@@ -336,42 +337,22 @@ public class FXMLDocumentController implements Initializable {
         lienzo.setStroke(c);
         lienzo.setLineWidth(3);
 
-//        lienzo.fillOval(coordx, coordy, radio * 2, radio * 2);
         lienzo.strokeArc(coordx, coordy, radio * 2, radio * 2, 45, 290, ArcType.ROUND);
-//        lienzo.strokeOval(coordx, coordy, radio * 2, radio * 2);
 
         int radio2 = 5;
         if (c == null) {
-//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
             Color c3 = Color.CORAL;
             c = c3;
         }
-        lienzo.setStroke(c);
+        lienzo.setStroke(Color.BLACK);
+        lienzo.setFill(Color.BLACK);
         lienzo.setLineWidth(3);
-
+        lienzo.fillOval(coordx + 50, coordy + 20, radio2 * 2, radio2 * 2);
         lienzo.strokeOval(coordx + 50, coordy + 20, radio2 * 2, radio2 * 2);
 
-//        
-//        arrayx[0] = (coordx + radio2);
-//        arrayy[0] = (coordy);
-//
-//        arrayx[1] = coordx + radio2 * Math.cos(2 * Math.PI / 3);
-//        arrayy[1] = coordy + radio2 * Math.sin(2 * Math.PI / 3);
-//
-//        arrayx[2] = coordx + radio2 * Math.cos(2 * 2 * Math.PI / 3);
-//        arrayy[2] = coordy + radio2 * Math.sin(2 * 2 * Math.PI / 3);
-//
-//
-//
-//        lienzo.setFill(c);
-//        lienzo.setStroke(c);
-//        lienzo.strokePolygon(arrayx, arrayy, 3);
-//        lienzo.fillPolygon(arrayx, arrayy, 3);
-//        for (int i = 0; i < arrayx.length; i++) {
-        Puntos2D punto = new Puntos2D(coordx+50, coordy+20, c, c);
+        Puntos2D punto = new Puntos2D(coordx + 50, coordy + 20, c, c);
         listapuntosFigura.add(punto);
-//
-//        }
+
         mapFiguras.put("Pacman" + contadorPacman, listapuntosFigura);
         contadorPacman++;
     }
@@ -384,6 +365,43 @@ public class FXMLDocumentController implements Initializable {
             JOptionPane.showMessageDialog(null, "Archivo Creado con exito");
         } else {
             JOptionPane.showMessageDialog(null, "Archivo No Creado");
+        }
+    }
+
+    @FXML
+    private void leerArchivoxml(ActionEvent event) {
+
+        HashMap<String, LinkedList<Puntos2D>> mapF = GuardadoXml.leerArchivo();
+
+        Iterator<Map.Entry<String, LinkedList<Puntos2D>>> entries = mapF.entrySet().iterator();
+        Color color = null;
+        while (entries.hasNext()) {
+            Map.Entry<String, LinkedList<Puntos2D>> elemento = entries.next();
+            double[] coordenadasx = new double[elemento.getValue().size()];
+            double[] coordenadasy = new double[elemento.getValue().size()];
+
+            for (int i = 0; i < elemento.getValue().size(); i++) {
+                Puntos2D punto = elemento.getValue().get(i);
+                color = elemento.getValue().get(i).getColorResaltado();
+                coordenadasx[i] = punto.getX();
+                coordenadasy[i] = punto.getY();
+            }
+            lienzo.setLineWidth(3);
+            lienzo.setStroke(color);
+//            lienzo.setFill(color);
+//            lienzo.fillPolygon(coordenadasx, coordenadasy, elemento.getValue().size());
+            lienzo.strokePolygon(coordenadasx, coordenadasy, elemento.getValue().size());
+
+            if (elemento.getValue().size() == 1) {
+                int radio = 50;
+                lienzo.strokeArc(coordenadasx[0], coordenadasy[0], radio * 2, radio * 2, 45, 290, ArcType.ROUND);
+                int radio2 = 5;
+                lienzo.setLineWidth(3);
+                lienzo.setStroke(Color.BLACK);
+                lienzo.setFill(Color.BLACK);
+                lienzo.strokeOval(coordenadasx[0] + 50, coordenadasy[0] + 20, radio2 * 2, radio2 * 2);
+                lienzo.fillOval(coordenadasx[0] + 50, coordenadasy[0] + 20, radio2 * 2, radio2 * 2);
+            }
         }
     }
 
@@ -406,7 +424,6 @@ public class FXMLDocumentController implements Initializable {
     private void crearHexagono() {
         LinkedList<Puntos2D> lista = new LinkedList<>();
         LinkedList<Figura2D> listaf = new LinkedList<>();
-//        lienzo = canvas.getGraphicsContext2D();
         listapuntosFigura = new LinkedList<>();
         arrayx = new double[6];
         arrayy = new double[6];
@@ -432,7 +449,6 @@ public class FXMLDocumentController implements Initializable {
         arrayx[5] = coordx + radio2 * Math.cos(5 * 2 * Math.PI / 6);
         arrayy[5] = coordy + radio2 * Math.sin(5 * 2 * Math.PI / 6);
         if (c == null) {
-//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
             Color c3 = Color.CORAL;
             c = c3;
         }
@@ -479,7 +495,6 @@ public class FXMLDocumentController implements Initializable {
         arrayx[6] = coordx + radio * Math.cos(6 * 2 * Math.PI / 7);
         arrayy[6] = coordy + radio * Math.sin(6 * 2 * Math.PI / 7);
         if (c == null) {
-//            Color color = new Color(1.0, 1.0, 0.3019608, 1.0);
             Color c3 = Color.CORAL;
             c = c3;
         }

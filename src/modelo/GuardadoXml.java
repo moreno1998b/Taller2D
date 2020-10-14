@@ -13,6 +13,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
@@ -48,8 +49,8 @@ public class GuardadoXml {
             /**
              * crearArchivoXML.
              *
-             * Método para crear un archivo XML con los puntos arrayx e arrayy que se han
-             * creado en el lienzo.
+             * Método para crear un archivo XML con los puntos arrayx e arrayy
+             * que se han creado en el lienzo.
              */
 
             Element figurasgeometricas = new Element("FigurasGeometricas");
@@ -95,14 +96,15 @@ public class GuardadoXml {
                 Map.Entry<String, LinkedList<Puntos2D>> elemento = entries.next();
                 Element figurageometrica = new Element("figurageometrica");
                 figurageometrica.setAttribute(new Attribute("nombre", elemento.getKey()));
+                figurageometrica.setAttribute(new Attribute("color", elemento.getValue().get(0).getColorResaltado().toString()));
                 for (int i = 0; i < elemento.getValue().size(); i++) {
                     double valuex = elemento.getValue().get(i).getX();
                     double valuey = elemento.getValue().get(i).getY();
                     figurageometrica.addContent(new Element("Coordenadas" + (i + 1)).
                             setAttribute(new Attribute("x", String.valueOf(valuex))).
-                            setAttribute(new Attribute("y", String.valueOf(valuey))).
-                            setAttribute(new Attribute("colorRelleno",elemento.getValue().get(i).getColorRelleno().toString())).
-                            setAttribute(new Attribute("colorResaltado",elemento.getValue().get(i).getColorResaltado().toString())));
+                            setAttribute(new Attribute("y", String.valueOf(valuey))));
+//                            setAttribute(new Attribute("colorRelleno", elemento.getValue().get(i).getColorRelleno().toString())).
+//                            setAttribute(new Attribute("colorResaltado", elemento.getValue().get(i).getColorResaltado().toString())));
                 }
                 doc.getRootElement().addContent(figurageometrica);
             }
@@ -168,11 +170,7 @@ public class GuardadoXml {
 
         return Puntos;
     }
-    
-    
-    
-    
-    
+
     public static HashMap<String, LinkedList<Puntos2D>> leerArchivo() {
         HashMap<String, LinkedList<Puntos2D>> map = new HashMap<>();
         LinkedList<Puntos2D> listap;
@@ -189,16 +187,20 @@ public class GuardadoXml {
                 Element datos = (Element) list.get(i);
                 String nombreFigura = datos.getAttributeValue("nombre");
                 System.out.println("Tabla: " + nombreFigura);
-
+                Color c2 = Color.valueOf(datos.getAttributeValue("color"));
                 List listapuntos = datos.getChildren();
                 for (int j = 0; j < listapuntos.size(); j++) {
                     Element campo = (Element) listapuntos.get(j);
                     double x = Double.parseDouble(campo.getAttributeValue("x"));
                     double y = Double.parseDouble(campo.getAttributeValue("y"));
-//                    Puntos2D p = new Puntos2D(x, y,campo.getAttribute("colorRelleno"),campo.getAttribute("colorResaltado"));
-//                    listap.add(p);
+//                    Color c=campo.getAttributeValue("colorRelleno");
+//                    Color c2 = Color.valueOf(campo.getAttributeValue("colorRelleno").toString());
+                    System.out.println(c2);
+                    Puntos2D p = new Puntos2D(x, y, c2, c2);
+                    listap.add(p);
                 }
                 map.put(nombreFigura, listap);
+                System.out.println(nombreFigura + "     " + listap);
 
             }
 

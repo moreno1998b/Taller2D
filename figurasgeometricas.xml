@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <figurasgeometricas>
-  <figurageometrica nombre="Pacman0">
-    <Coordenadas1 x="546.0" y="386.0" colorRelleno="0x334db3ff" colorResaltado="0x334db3ff" />
+  <figurageometrica nombre="Hexagono0" color="0xffff80ff">
+    <Coordenadas1 x="544.0" y="470.0" />
+    <Coordenadas2 x="519.0" y="513.3012701892219" />
+    <Coordenadas3 x="469.0" y="513.3012701892219" />
+    <Coordenadas4 x="444.0" y="470.0" />
+    <Coordenadas5 x="469.0" y="426.6987298107781" />
+    <Coordenadas6 x="519.0" y="426.69872981077805" />
+  </figurageometrica>
+  <figurageometrica nombre="Pacman0" color="0xffff80ff">
+    <Coordenadas1 x="714.0" y="670.0" />
+  </figurageometrica>
+  <figurageometrica nombre="Heptagono1" color="0xffff80ff">
+    <Coordenadas1 x="396.0" y="667.0" />
+    <Coordenadas2 x="377.1744900929367" y="706.0915741234015" />
+    <Coordenadas3 x="334.8739533021843" y="715.7463956090912" />
+    <Coordenadas4 x="300.95155660487904" y="688.694186955878" />
+    <Coordenadas5 x="300.95155660487904" y="645.3058130441221" />
+    <Coordenadas6 x="334.87395330218425" y="618.2536043909088" />
+    <Coordenadas7 x="377.17449009293665" y="627.9084258765985" />
+  </figurageometrica>
+  <figurageometrica nombre="Octagono0" color="0xff7f50ff">
+    <Coordenadas1 x="593.0" y="193.0" />
+    <Coordenadas2 x="578.3553390593274" y="228.35533905932738" />
+    <Coordenadas3 x="543.0" y="243.0" />
+    <Coordenadas4 x="507.6446609406726" y="228.35533905932738" />
+    <Coordenadas5 x="493.0" y="193.0" />
+    <Coordenadas6 x="507.6446609406726" y="157.64466094067262" />
+    <Coordenadas7 x="543.0" y="143.0" />
+    <Coordenadas8 x="578.3553390593273" y="157.64466094067262" />
+  </figurageometrica>
+  <figurageometrica nombre="Pentagono0" color="0xffff80ff">
+    <Coordenadas1 x="415.0" y="413.0" />
+    <Coordenadas2 x="380.45084971874735" y="460.5528258147577" />
+    <Coordenadas3 x="324.54915028125265" y="442.38926261462365" />
+    <Coordenadas4 x="324.54915028125265" y="383.61073738537635" />
+    <Coordenadas5 x="380.45084971874735" y="365.4471741852423" />
+  </figurageometrica>
+  <figurageometrica nombre="Rombo0" color="0xff7f50ff">
+    <Coordenadas1 x="242.0" y="129.0" />
+    <Coordenadas2 x="192.0" y="179.0" />
+    <Coordenadas3 x="142.0" y="129.0" />
+    <Coordenadas4 x="192.0" y="79.0" />
   </figurageometrica>
 </figurasgeometricas>
