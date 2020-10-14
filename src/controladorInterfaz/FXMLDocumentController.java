@@ -368,7 +368,7 @@ public class FXMLDocumentController implements Initializable {
 //        lienzo.strokePolygon(arrayx, arrayy, 3);
 //        lienzo.fillPolygon(arrayx, arrayy, 3);
 //        for (int i = 0; i < arrayx.length; i++) {
-        Puntos2D punto = new Puntos2D(coordx, coordy, c, c2);
+        Puntos2D punto = new Puntos2D(coordx+50, coordy+20, c, c);
         listapuntosFigura.add(punto);
 //
 //        }

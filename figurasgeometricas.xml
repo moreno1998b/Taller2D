@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <figurasgeometricas>
-  <figurageometrica nombre="Hexagono0">
-    <Coordenadas1 x="382.0" y="303.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas2 x="357.0" y="346.30127018922195" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas3 x="307.0" y="346.30127018922195" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas4 x="282.0" y="303.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas5 x="307.0" y="259.6987298107781" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas6 x="357.0" y="259.69872981077805" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
+  <figurageometrica nombre="Pacman0">
+    <Coordenadas1 x="546.0" y="386.0" colorRelleno="0x334db3ff" colorResaltado="0x334db3ff" />
   </figurageometrica>
 </figurasgeometricas>
