@@ -30,8 +30,6 @@
               <MenuItem mnemonicParsing="false" onAction="#guardarArchivo" text="Guardar Archivo" />
 
                   <MenuItem mnemonicParsing="false" onAction="#leerArchivoxml" text="Leer Archivo" />
-
-                  <MenuItem mnemonicParsing="false" onAction="#leerArchivo" text="Leer Archivo " />
                   <MenuItem mnemonicParsing="false" onAction="#guardarPNG" text="Guardar PNG" />
                   <MenuItem mnemonicParsing="false" onAction="#guardarJPG" text="Guardar JPG" />
             </items>

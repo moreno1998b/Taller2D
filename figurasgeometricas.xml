@@ -1,73 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <figurasgeometricas>
-
-  <figurageometrica nombre="Hexagono0" color="0xffff80ff">
-    <Coordenadas1 x="544.0" y="470.0" />
-    <Coordenadas2 x="519.0" y="513.3012701892219" />
-    <Coordenadas3 x="469.0" y="513.3012701892219" />
-    <Coordenadas4 x="444.0" y="470.0" />
-    <Coordenadas5 x="469.0" y="426.6987298107781" />
-    <Coordenadas6 x="519.0" y="426.69872981077805" />
+  <figurageometrica nombre="Hexagono0" color="0xff7f50ff">
+    <Coordenadas1 x="211.0" y="418.0" />
+    <Coordenadas2 x="186.0" y="461.30127018922195" />
+    <Coordenadas3 x="136.0" y="461.30127018922195" />
+    <Coordenadas4 x="111.0" y="418.0" />
+    <Coordenadas5 x="135.99999999999997" y="374.6987298107781" />
+    <Coordenadas6 x="186.0" y="374.69872981077805" />
   </figurageometrica>
-  <figurageometrica nombre="Pacman0" color="0xffff80ff">
-    <Coordenadas1 x="714.0" y="670.0" />
-  </figurageometrica>
-  <figurageometrica nombre="Heptagono1" color="0xffff80ff">
-    <Coordenadas1 x="396.0" y="667.0" />
-    <Coordenadas2 x="377.1744900929367" y="706.0915741234015" />
-    <Coordenadas3 x="334.8739533021843" y="715.7463956090912" />
-    <Coordenadas4 x="300.95155660487904" y="688.694186955878" />
-    <Coordenadas5 x="300.95155660487904" y="645.3058130441221" />
-    <Coordenadas6 x="334.87395330218425" y="618.2536043909088" />
-    <Coordenadas7 x="377.17449009293665" y="627.9084258765985" />
+  <figurageometrica nombre="Pacman0" color="0xff7f50ff">
+    <Coordenadas1 x="345.0" y="642.0" />
   </figurageometrica>
   <figurageometrica nombre="Octagono0" color="0xff7f50ff">
-    <Coordenadas1 x="593.0" y="193.0" />
-    <Coordenadas2 x="578.3553390593274" y="228.35533905932738" />
-    <Coordenadas3 x="543.0" y="243.0" />
-    <Coordenadas4 x="507.6446609406726" y="228.35533905932738" />
-    <Coordenadas5 x="493.0" y="193.0" />
-    <Coordenadas6 x="507.6446609406726" y="157.64466094067262" />
-    <Coordenadas7 x="543.0" y="143.0" />
-    <Coordenadas8 x="578.3553390593273" y="157.64466094067262" />
-  </figurageometrica>
-  <figurageometrica nombre="Pentagono0" color="0xffff80ff">
-    <Coordenadas1 x="415.0" y="413.0" />
-    <Coordenadas2 x="380.45084971874735" y="460.5528258147577" />
-    <Coordenadas3 x="324.54915028125265" y="442.38926261462365" />
-    <Coordenadas4 x="324.54915028125265" y="383.61073738537635" />
-    <Coordenadas5 x="380.45084971874735" y="365.4471741852423" />
+    <Coordenadas1 x="499.0" y="462.0" />
+    <Coordenadas2 x="484.3553390593274" y="497.3553390593274" />
+    <Coordenadas3 x="449.0" y="512.0" />
+    <Coordenadas4 x="413.6446609406726" y="497.3553390593274" />
+    <Coordenadas5 x="399.0" y="462.0" />
+    <Coordenadas6 x="413.6446609406726" y="426.6446609406726" />
+    <Coordenadas7 x="449.0" y="412.0" />
+    <Coordenadas8 x="484.3553390593274" y="426.6446609406726" />
   </figurageometrica>
   <figurageometrica nombre="Rombo0" color="0xff7f50ff">
-    <Coordenadas1 x="242.0" y="129.0" />
-    <Coordenadas2 x="192.0" y="179.0" />
-    <Coordenadas3 x="142.0" y="129.0" />
-    <Coordenadas4 x="192.0" y="79.0" />
-  <figurageometrica nombre="Pacman0">
-    <Coordenadas1 x="259.0" y="462.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-  </figurageometrica>
-  <figurageometrica nombre="Octagono0">
-    <Coordenadas1 x="404.0" y="243.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas2 x="389.3553390593274" y="278.3553390593274" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas3 x="354.0" y="293.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas4 x="318.6446609406726" y="278.3553390593274" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas5 x="304.0" y="243.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas6 x="318.6446609406726" y="207.64466094067262" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas7 x="354.0" y="193.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas8 x="389.3553390593274" y="207.64466094067262" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-  </figurageometrica>
-  <figurageometrica nombre="Pentagono0">
-    <Coordenadas1 x="475.0" y="362.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas2 x="440.45084971874735" y="409.5528258147577" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas3 x="384.54915028125265" y="391.38926261462365" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas4 x="384.54915028125265" y="332.61073738537635" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas5 x="440.45084971874735" y="314.4471741852423" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-  </figurageometrica>
-  <figurageometrica nombre="Rombo0">
-    <Coordenadas1 x="142.0" y="250.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas2 x="92.0" y="300.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas3 x="42.0" y="250.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-    <Coordenadas4 x="91.99999999999999" y="200.0" colorRelleno="0xff7f50ff" colorResaltado="0xff7f50ff" />
-
+    <Coordenadas1 x="318.0" y="264.0" />
+    <Coordenadas2 x="268.0" y="314.0" />
+    <Coordenadas3 x="218.0" y="264.0" />
+    <Coordenadas4 x="268.0" y="214.0" />
   </figurageometrica>
 </figurasgeometricas>
