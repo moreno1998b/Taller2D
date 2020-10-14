@@ -107,6 +107,10 @@ public class FXMLDocumentController implements Initializable {
     private void handleButtonAction(ActionEvent event) {
 
     }
+    @FXML
+    private void leerArchivo (ActionEvent event) {
+
+    }
 
 //    @FXML
     private void crearRombo() {
